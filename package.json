@@ -3,7 +3,7 @@
     "displayName": "Copy file names as array of strings",
     "description": "Simple VS Code plugin that allows you to copy file names or folder names to clipboard from sidebar as a comma-separated array of strings",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "bvanderhorn",
     "engines": {
         "vscode": "^1.65.2"
