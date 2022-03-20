@@ -1,5 +1,9 @@
 # Copy file names as array of strings
 
+[![](https://vsmarketplacebadge.apphb.com/version-short/bvanderhorn.copy-filenames-as-array-of-strings.svg)](https://marketplace.visualstudio.com/items?itemName=bvanderhorn.copy-filenames-as-array-of-strings)
+[![](https://vsmarketplacebadge.apphb.com/installs-short/bvanderhorn.copy-filenames-as-array-of-strings.svg)](https://marketplace.visualstudio.com/items?itemName=bvanderhorn.copy-filenames-as-array-of-strings)
+[![](https://vsmarketplacebadge.apphb.com/rating-short/bvanderhorn.copy-filenames-as-array-of-strings.svg)](https://marketplace.visualstudio.com/items?itemName=bvanderhorn.copy-filenames-as-array-of-strings)
+
 ![Copy file names as array of strings](https://raw.githubusercontent.com/bvanderhorn/vscode-copy-filenames-as-array-of-strings/main/img/cfas-use-gif.gif)
 
 Simple VS Code plugin that allows you to copy file names or folder names to clipboard from sidebar or opened file label as a comma-separated array of strings.
