@@ -1,0 +1,85 @@
+{
+    "name": "copy-filename",
+    "displayName": "Copy filename",
+    "description": "Simple VS Code plugin that allows you to copy file names or folder names to clipboard from sidebar as a comma-separated array of strings",
+    "license": "MIT",
+    "version": "1.0.0",
+    "publisher": "bvanderhorn",
+    "engines": {
+        "vscode": "^1.65.2"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "sidebar",
+        "copy-filename",
+        "copy-filenames-as-array-of-strings",
+        "clipboard",
+        "file",
+        "folder",
+        "array",
+        "string"
+    ],
+    "activationEvents": [
+        "onCommand:extension.copyFileNameStringArray",
+        "onCommand:extension.copyFileNameStringArrayNoExtensions"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.copyFileNameStringArray",
+                "title": "Copy file names to clipboard as array of strings"
+            },
+            {
+                "command": "extension.copyFileNameStringArrayNoExtensions",
+                "title": "Copy file names to clipboard as array of strings (no extensions)"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "extension.copyFileNameStringArray"
+                },
+                {
+                    "command": "extension.copyFileNameStringArrayNoExtensions"
+                }
+            ],
+            "editor/title/context": [
+                {
+                    "command": "extension.copyFileNameStringArray"
+                },
+                {
+                    "command": "extension.copyFileNameStringArrayNoExtensions"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.48",
+        "@types/node": "^7.0.71",
+        "eslint": "^5.14.1",
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.33",
+        "diff": ">=3.5.0",
+        "minimist": ">=0.2.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bvanderhorn/vscode-copy-filenames-as-array-of-strings"
+    },
+    "galleryBanner": {
+        "color": "#1c2237",
+        "theme": "dark"
+    },
+    "icon": "img/cfas_logo.png",
+    "dependencies": {
+        "clipboardy": "^2.3.0",
+        "hoek": "^5.0.4"
+    }
+}
