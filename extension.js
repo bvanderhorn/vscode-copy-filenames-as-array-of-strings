@@ -22,11 +22,7 @@ exports.activate = context => {
                 accumulator += '\"';
                 accumulator += (index == files.length -1) ? '' : ',\n';
             });
-        } else if(uri) {
-            let url = vscode.workspace.asRelativePath(uri);
-            let urlFormatted = url.replace(/\\/g, '/')
-            accumulator += urlFormatted.split('/').pop();
-        }
+        } 
 
         //Copy the last part to clipboard
         clipboardy.write(accumulator).then(showWarning('Filename/s has been copied to clipboard'));
@@ -48,11 +44,7 @@ exports.activate = context => {
                 accumulator += '\"';
                 accumulator += (index == files.length -1) ? '' : ',\n';
             });
-        } else if(uri) {
-            let url = vscode.workspace.asRelativePath(uri);
-            let urlFormatted = url.replace(/\\/g, '/')
-            accumulator += urlFormatted.split('/').pop();
-        }
+        } 
 
         //Copy the last part to clipboard
         clipboardy.write(accumulator).then(showWarning('Filename/s has been copied to clipboard'));

@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.3
+
+* Removed option to copy file name from editor title context.
+
 ## 1.0.2
 
 * Updated README and logo.
